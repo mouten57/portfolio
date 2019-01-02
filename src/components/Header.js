@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import headerIcons from './headerIcons'
+import '../assets/css/Header.css'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
@@ -10,6 +11,7 @@ const Header = props => (
       <div className="inner">
         <h1>Matt Outen</h1>
         <p>Web Developer | Veteran Teacher | Ultramarathon Runer</p>
+        {headerIcons()}
       </div>
     </div>
     <nav>
