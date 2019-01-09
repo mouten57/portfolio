@@ -6,21 +6,14 @@ import { StaticQuery, graphql } from 'gatsby'
 import '../assets/scss/main.scss'
 
 const Layout = ({ children, location }) => {
-
-  let content;
+  let content
 
   if (location && location.pathname === '/') {
-    content = (
-      <div>
-        {children}
-      </div>
-    )
+    content = <div>{children}</div>
   } else {
     content = (
       <div id="wrapper" className="page">
-        <div>
-          {children}
-        </div>
+        <div>{children}</div>
       </div>
     )
   }
@@ -46,6 +39,17 @@ const Layout = ({ children, location }) => {
             ]}
           >
             <html lang="en" />
+            <link
+              rel="stylesheet"
+              type="text/css"
+              charset="UTF-8"
+              href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+            />
+            <link
+              rel="stylesheet"
+              type="text/css"
+              href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+            />
           </Helmet>
           {content}
         </>

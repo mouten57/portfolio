@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Carousel from './Carousel'
 
 import MattEmily from '../images/MattEmily.jpg'
 import pic02 from '../images/pic02.jpg'
@@ -35,7 +36,15 @@ class Main extends React.Component {
           </span>
           <p>
             Hi I'm Matt. By the way, check out my{' '}
-            <a href="#work">awesome work</a>.
+            <a
+              href=" javascript:;"
+              onClick={() => {
+                this.props.onSwitch('work')
+              }}
+            >
+              awesome work
+            </a>
+            .
           </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -62,23 +71,9 @@ class Main extends React.Component {
         >
           <h2 className="major">Work</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <Carousel />
           </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+
           {close}
         </article>
 
@@ -113,7 +108,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="POST" action="https://formspree.io/outenmp@gmail.com">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -137,22 +132,28 @@ class Main extends React.Component {
           </form>
           <ul className="icons">
             <li>
-              <a href="#" className="icon fa-twitter">
+              <a href="https://twitter.com/mouten1" className="icon fa-twitter">
                 <span className="label">Twitter</span>
               </a>
             </li>
             <li>
-              <a href="#" className="icon fa-facebook">
+              <a
+                href="https://www.facebook.com/matt.outen.393"
+                className="icon fa-facebook"
+              >
                 <span className="label">Facebook</span>
               </a>
             </li>
             <li>
-              <a href="#" className="icon fa-instagram">
+              <a
+                href="https://www.instagram.com/mrouten/"
+                className="icon fa-instagram"
+              >
                 <span className="label">Instagram</span>
               </a>
             </li>
             <li>
-              <a href="#" className="icon fa-github">
+              <a href="https://github.com/mouten57" className="icon fa-github">
                 <span className="label">GitHub</span>
               </a>
             </li>
