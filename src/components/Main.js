@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Carousel from './Carousel'
 
 import MattEmily from '../images/MattEmily.jpg'
+import IntroPic from '../images/IntroPic.jpeg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
@@ -32,10 +33,25 @@ class Main extends React.Component {
         >
           <h2 className="major">Intro</h2>
           <span className="image main">
-            <img src={MattEmily} alt="" />
+            <img src={IntroPic} alt="" />
           </span>
+          <p>Hi, I'm Matt.</p>
           <p>
-            Hi I'm Matt. By the way, check out my{' '}
+            I'm a new father and veteran teacher with 6 years of patience tucked
+            under my belt. I began my journey to web development when I decided
+            to combine my love of tech with my desire to never stop learning.{' '}
+            <a
+              href=" javascript:;"
+              onClick={() => {
+                this.props.onSwitch('contact')
+              }}
+            >
+              Contact me
+            </a>{' '}
+            to chat!
+          </p>
+          <p>
+            By the way, check out my{' '}
             <a
               href=" javascript:;"
               onClick={() => {
@@ -45,19 +61,6 @@ class Main extends React.Component {
               awesome work
             </a>
             .
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
           </p>
           {close}
         </article>
@@ -86,16 +89,19 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={MattEmily} alt="" />
           </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
+            Long-time lover of tech. New father. Married to an amazing woman.{' '}
+            <a
+              href=" javascript:;"
+              onClick={() => {
+                this.props.onSwitch('contact')
+              }}
+            >
+              Contact me
+            </a>{' '}
+            to learn more!
           </p>
           {close}
         </article>
