@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
 import '../assets/css/carousel.css'
-import pic1 from '../images/pic01.jpg'
-import pic2 from '../images/pic01.jpg'
-import pic3 from '../images/pic03.jpg'
+import Budget from '../components/my_work/Budget'
+import ClassicStream from '../components/my_work/ClassicStream'
+import TMC from '../components/my_work/TexasMathCentral'
 
 export default class SimpleSlider extends Component {
   render() {
@@ -38,42 +38,11 @@ export default class SimpleSlider extends Component {
       <div className="featured-subheader">
         <h4> latest work</h4>
         <Slider {...settings}>
-          <div>
-            <h1>1</h1>
-            <img src={pic1} alt="pic1" />
-            <p>This is a placeholder paragraph.</p>
-            <ul>
-              Here's a list
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
-            </ul>
-          </div>
-          <div>
-            <h1>2</h1>
-            <img src={pic2} alt="pic2" />
-            <p>This is a placeholder paragraph.</p>
-            <ul>
-              Here's a list
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
-            </ul>
-          </div>
-          <div>
-            <h1>3</h1>
-            <img src={pic3} alt="pic3" />
-            <p>This is a placeholder paragraph.</p>
-            <ul>
-              Here's a list
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
-            </ul>
-          </div>
-          <div>
-            <h1>4</h1>
-          </div>
+          <Budget />
+          <ClassicStream />
+          <TMC />
+          <Budget />
+          <Budget />
         </Slider>
       </div>
     )
