@@ -16,7 +16,7 @@ const ClassicStream = () => (
     liveLink="https://bloc-jams-mouten57.herokuapp.com/"
     readmeLink="https://github.com/mouten57/bloc-jams-react/blob/master/README.md"
   >
-    <li>One more random item</li>
+    <li />
   </Layout>
 )
 

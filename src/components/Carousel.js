@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
 import '../assets/css/carousel.css'
+import CakedInButter from '../components/my_work/CakedInButter'
+import TMC from '../components/my_work/TexasMathCentral'
+import WikiSpot from '../components/my_work/WikiSpot'
+import Emaily from '../components/my_work/Emaily'
+import FamChat from '../components/my_work/FamChat'
+import Connect from '../components/my_work/Connect'
 import Budget from '../components/my_work/Budget'
 import ClassicStream from '../components/my_work/ClassicStream'
-import TMC from '../components/my_work/TexasMathCentral'
 
 export default class SimpleSlider extends Component {
   render() {
@@ -38,11 +43,14 @@ export default class SimpleSlider extends Component {
       <div className="featured-subheader">
         <h4> latest work</h4>
         <Slider {...settings}>
+          <CakedInButter />
+          <TMC />
+          <WikiSpot />
+          <Emaily />
+          <FamChat />
+          <Connect />
           <Budget />
           <ClassicStream />
-          <TMC />
-          <Budget />
-          <Budget />
         </Slider>
       </div>
     )

@@ -16,7 +16,7 @@ const Budget = () => (
     liveLink="https://outen-budget.herokuapp.com/"
     readmeLink="https://github.com/mouten57/budget-app/blob/master/README.md"
   >
-    <li>One more random item</li>
+    <li />
   </Layout>
 )
 
