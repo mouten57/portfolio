@@ -4,7 +4,7 @@ import image from '../../images/CakedInButter.png'
 
 const CakedInButter = () => (
   <Layout
-    title="CakedInButter"
+    title="Caked In Butter"
     imgSrc={image}
     imgAlt="cakedinbutter"
     timeline="January 2019 - present"
@@ -15,9 +15,7 @@ const CakedInButter = () => (
     githubLink="https://github.com/mouten57/caked_in_butter"
     liveLink="https://www.cakedinbutter.com"
     readmeLink="https://github.com/mouten57/caked_in_butter/blob/master/README.md"
-  >
-    <li> </li>
-  </Layout>
+  />
 )
 
 export default CakedInButter

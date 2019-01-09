@@ -15,9 +15,7 @@ const Emaily = () => (
     githubLink="https://github.com/mouten57/emaily"
     liveLink="https://powerful-earth-60772.herokuapp.com/"
     readmeLink="https://github.com/mouten57/emaily/blob/master/README.md"
-  >
-    <li> </li>
-  </Layout>
+  />
 )
 
 export default Emaily

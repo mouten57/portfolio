@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import Slider from 'react-slick'
 import '../assets/css/carousel.css'
 import CakedInButter from '../components/my_work/CakedInButter'
+import ShopNShare from '../components/my_work/ShopNShare'
 import TMC from '../components/my_work/TexasMathCentral'
+import OutenBabyTracker from '../components/my_work/OutenBabyTracker'
 import WikiSpot from '../components/my_work/WikiSpot'
 import Emaily from '../components/my_work/Emaily'
 import FamChat from '../components/my_work/FamChat'
@@ -44,7 +46,9 @@ export default class SimpleSlider extends Component {
         <h4> latest work</h4>
         <Slider {...settings}>
           <CakedInButter />
+          <ShopNShare />
           <TMC />
+          <OutenBabyTracker />
           <WikiSpot />
           <Emaily />
           <FamChat />

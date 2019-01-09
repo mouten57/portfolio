@@ -8,7 +8,10 @@ export default props => (
       <img src={props.imgSrc} alt={props.imgAlt} />
     </a>
     <p className="portfolio-item-timeline">{props.timeline}</p>
-    <p className="portfolio-item-text">{props.body}</p>
+    <p className="portfolio-item-text">
+      <i className="fa fa-angle-double-right" />
+      {props.body}
+    </p>
     <ul className="portfolio-item-list">
       <li>{props.bulletOne}</li>
       <li>{props.bulletTwo}</li>

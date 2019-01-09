@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from './template'
 import image from '../../images/TMC.png'
 
-const Budget = () => (
+const TMC = () => (
   <Layout
     title="Texas Math Central"
     imgSrc={image}
@@ -20,4 +20,4 @@ const Budget = () => (
   </Layout>
 )
 
-export default Budget
+export default TMC

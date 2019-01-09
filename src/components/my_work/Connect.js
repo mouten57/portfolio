@@ -15,9 +15,7 @@ const Connect = () => (
     githubLink="https://github.com/mouten57/bloc-chat-react"
     liveLink="https://outen-chat.herokuapp.com/"
     readmeLink="https://github.com/mouten57/bloc-chat-react/blob/master/README.md"
-  >
-    <li> </li>
-  </Layout>
+  />
 )
 
 export default Connect

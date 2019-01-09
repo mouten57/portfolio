@@ -15,9 +15,7 @@ const Budget = () => (
     githubLink="https://github.com/mouten57/budget-app"
     liveLink="https://outen-budget.herokuapp.com/"
     readmeLink="https://github.com/mouten57/budget-app/blob/master/README.md"
-  >
-    <li />
-  </Layout>
+  />
 )
 
 export default Budget
