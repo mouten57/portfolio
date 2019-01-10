@@ -4,8 +4,8 @@ import Carousel from './Carousel'
 
 import MattEmily from '../images/MattEmily.jpg'
 import IntroPic from '../images/IntroPic.jpeg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+//import pic02 from '../images/pic02.jpg'
+//import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
   render() {
