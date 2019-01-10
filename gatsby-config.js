@@ -2,6 +2,7 @@ const config = require('./data/Siteconfig')
 
 module.exports = {
   siteMetadata: {
+    siteUrl: config.siteUrl,
     title: config.siteTitle,
     author: config.author,
     description: config.description,
@@ -16,8 +17,13 @@ module.exports = {
         trackingId: config.googleAnalyticsID,
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        color: config.themeColor,
+      },
+    },
+
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -30,6 +36,8 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`,
       },
     },
+    'gatsby-plugin-sass',
+    `gatsby-plugin-sitemap`,
     'gatsby-plugin-offline',
   ],
 }

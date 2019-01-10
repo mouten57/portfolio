@@ -1,4 +1,5 @@
 module.exports = {
+  siteUrl: `https://www.mattouten.com`,
   siteTitle: 'Matt Outen | Web Developer',
   siteTitleShort: 'Matt Outen',
   pathPrefix: '/',
