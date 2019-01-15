@@ -114,7 +114,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="POST" action="https://formspree.io/outenmp@gmail.com">
+          <form name="contact" method="POST" data-netlifty="true">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
