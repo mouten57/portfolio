@@ -15,7 +15,7 @@ const FamChat = () => (
                   and voting amongst others."
 		bulletOne="Authentication using Passport; Authorization using
                 policies"
-		bulletTwo="Node/Express/Postgres "
+		bulletTwo="Node/Express/Postgres"
 		bulletThree="Views constructed with EJS"
 		githubLink="https://github.com/mouten57/bloccit/"
 		liveLink="http://mouten57-bloccit.herokuapp.com/"
