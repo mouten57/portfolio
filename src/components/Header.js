@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import headerIcons from './headerIcons'
 
-const Header = props => (
+const Header = (props) => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
       <span className="icon fa-diamond" />
@@ -16,7 +16,7 @@ const Header = props => (
     </div>
     <nav>
       <ul>
-        <li>
+        {/* <li>
           <a
             href="javascript:;"
             onClick={() => {
@@ -24,6 +24,16 @@ const Header = props => (
             }}
           >
             Intro
+          </a>
+        </li> */}
+        <li>
+          <a
+            href="javascript:;"
+            onClick={() => {
+              props.onOpenArticle('about')
+            }}
+          >
+            About
           </a>
         </li>
         <li>
@@ -36,16 +46,7 @@ const Header = props => (
             Work
           </a>
         </li>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('about')
-            }}
-          >
-            About
-          </a>
-        </li>
+
         <li>
           <a
             href="javascript:;"

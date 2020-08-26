@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Carousel from './Carousel'
 
 import MattEmily from '../images/MattEmily.jpg'
-import IntroPic from '../images/IntroPic.jpeg'
+import IntroPic from '../images/IntroPic.png'
 //import pic02 from '../images/pic02.jpg'
 //import pic03 from '../images/pic03.jpg'
 
@@ -89,10 +89,13 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <span className="image main">
-            <img src={MattEmily} alt="" />
+            <img src={IntroPic} alt="" />
           </span>
+          <p>Hi, I'm Matt.</p>
           <p>
-            Long-time lover of tech. New father. Married to an amazing woman.{' '}
+            I'm a new father and veteran teacher with 6 years of patience tucked
+            under my belt. I began my journey to web development when I decided
+            to combine my love of tech with my desire to never stop learning.{' '}
             <a
               href=" javascript:;"
               onClick={() => {
@@ -101,7 +104,19 @@ class Main extends React.Component {
             >
               Contact me
             </a>{' '}
-            to learn more!
+            to chat!
+          </p>
+          <p>
+            By the way, check out my{' '}
+            <a
+              href=" javascript:;"
+              onClick={() => {
+                this.props.onSwitch('work')
+              }}
+            >
+              awesome work
+            </a>
+            .
           </p>
           {close}
         </article>

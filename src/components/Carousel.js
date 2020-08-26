@@ -12,6 +12,7 @@ import FamChat from '../components/my_work/FamChat'
 import Connect from '../components/my_work/Connect'
 import Budget from '../components/my_work/Budget'
 import ClassicStream from '../components/my_work/ClassicStream'
+import ChuckNorris from '../components/my_work/ChuckNorris'
 
 export default class SimpleSlider extends Component {
   render() {
@@ -22,7 +23,7 @@ export default class SimpleSlider extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       adaptiveHeight: false,
-      appendDots: dots => (
+      appendDots: (dots) => (
         <div
           style={{
             borderRadius: '10px',
@@ -32,7 +33,7 @@ export default class SimpleSlider extends Component {
           <ul style={{ margin: '0px' }}> {dots} </ul>
         </div>
       ),
-      customPaging: i => (
+      customPaging: (i) => (
         <div
           style={{
             width: '30px',
@@ -46,16 +47,17 @@ export default class SimpleSlider extends Component {
       <div className="featured-subheader">
         <h4> latest work</h4>
         <Slider {...settings}>
+          <ChuckNorris />
           <CaitlinMayConsulting />
-          <CakedInButter />
+          {/* <CakedInButter /> */}
           <ShopNShare />
           <TMC />
           <OutenBabyTracker />
           <WikiSpot />
-          <Emaily />
+          {/* <Emaily /> */}
           <FamChat />
           <Connect />
-          <Budget />
+          {/* <Budget /> */}
           <ClassicStream />
         </Slider>
       </div>

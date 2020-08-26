@@ -7,7 +7,7 @@ const Connect = () => (
     title="Connect"
     imgSrc={image}
     imgAlt="connect"
-    timeline="September 2018 - October 2018"
+    timeline="September 2018 - October 2018 (Updated 2020)"
     body="CONNECT is a chatroom web app built using React and Firebase."
     bulletOne="Google Authentication with Firebase"
     bulletTwo="Deletes all associated messages on room-delete (CASCADE-style delete)"
