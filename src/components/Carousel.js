@@ -47,11 +47,11 @@ export default class SimpleSlider extends Component {
       <div className="featured-subheader">
         <h4> latest work</h4>
         <Slider {...settings}>
+          <TMC />
           <ChuckNorris />
           <CaitlinMayConsulting />
           {/* <CakedInButter /> */}
           <ShopNShare />
-          <TMC />
           <OutenBabyTracker />
           <WikiSpot />
           {/* <Emaily /> */}
