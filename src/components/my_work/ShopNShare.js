@@ -12,12 +12,12 @@ const ShopNShare = () => (
     bulletOne="Google OAuth 2.0/Passport.js"
     bulletTwo="CRUD with React and Mongoose"
     bulletThree="Real-time updates with Socket.io"
+    bulletFour="Deployed with Heroku"
+    bulletFive="Tested with jasmine"
     githubLink="https://github.com/mouten57/shop-n-share"
     liveLink="https://shop-n-share.herokuapp.com/"
     readmeLink="https://github.com/mouten57/shop-n-share/blob/master/README.md"
   >
-    <li>Deployed with Heroku</li>
-    <li>Tested with jasmine</li>
   </Layout>
 )
 

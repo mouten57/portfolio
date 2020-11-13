@@ -13,7 +13,7 @@ import Connect from '../components/my_work/Connect'
 import Budget from '../components/my_work/Budget'
 import ClassicStream from '../components/my_work/ClassicStream'
 import ChuckNorris from '../components/my_work/ChuckNorris'
-
+import MariMaraist from '../components/my_work/MariMaraist'
 export default class SimpleSlider extends Component {
   render() {
     const settings = {
@@ -47,6 +47,7 @@ export default class SimpleSlider extends Component {
       <div className="featured-subheader">
         <h4> latest work</h4>
         <Slider {...settings}>
+          <MariMaraist/>
           <TMC />
           <ChuckNorris />
           <CaitlinMayConsulting />
